@@ -1,7 +1,9 @@
+require('dotenv').config();
 const express = require('express');
-
 const app = express();
 
+const connectDB = require('./config/connectDB');
+connectDB();
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
