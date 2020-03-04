@@ -9,7 +9,6 @@ const connectDB = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true
     })
-
     console.log('Database is connected')
   } catch (error) {
     console.error(err.message);
